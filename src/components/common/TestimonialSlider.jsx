@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import myImage from '../../assets/image.jpg';
 
 const testimonials = [
   {
@@ -6,21 +7,21 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'CTO, InnovaTech Solutions',
     content: 'TechNova transformed our digital infrastructure with their cloud solutions. The efficiency gains and cost savings have been remarkable.',
-    image: '/api/placeholder/64/64'
+    image: myImage
   },
   {
     id: 2,
     name: 'Michael Chen',
     role: 'Founder, DataFlow Analytics',
     content: 'The AI/ML solutions provided by TechNova helped us unlock valuable insights from our data, driving better business decisions.',
-    image: '/api/placeholder/64/64'
+    image: myImage
   },
   {
     id: 3,
     name: 'Emily Rodriguez',
     role: 'Director of Engineering, WebScale',
     content: 'Their web development team delivered a stunning, high-performance application that exceeded our expectations.',
-    image: '/api/placeholder/64/64'
+    image: myImage
   }
 ];
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import TeamMember from '../components/sections/TeamMember';
 import CompanyValues from '../components/sections/CompanyValues';
+import myImage from '../assets/image.jpg';
 
 const About = () => {
   const teamMembers = [
@@ -8,30 +9,30 @@ const About = () => {
       name: 'David Anderson',
       role: 'Chief Executive Officer',
       bio: 'With over 20 years of experience in technology leadership, David drives TechNova\'s vision of innovation and excellence.',
-      image: '/api/placeholder/300/300'
+      image:myImage
     },
     {
       name: 'Maria Garcia',
       role: 'Chief Technology Officer',
       bio: 'Maria leads our technical strategy and ensures we remain at the forefront of technological advancement.',
-      image: '/api/placeholder/300/300'
+      image: myImage
     },
     {
       name: 'James Wilson',
       role: 'Head of AI/ML',
       bio: 'James brings extensive expertise in artificial intelligence and machine learning to drive our innovative solutions.',
-      image: '/api/placeholder/300/300'
+      image: myImage
     },
     {
       name: 'Linda Chen',
       role: 'Director of Operations',
       bio: 'Linda ensures smooth execution of our projects and maintains our high standards of service delivery.',
-      image: '/api/placeholder/300/300'
+      image: myImage
     }
   ];
 
   return (
-    <div className="py-16">
+    <div className="py-30">
       <div className="container mx-auto px-4">
         {/* Mission Section */}
         <section className="mb-20">

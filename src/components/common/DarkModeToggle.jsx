@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { useTheme } from '../../contexts/ThemeContext'; // Import the theme context
 
-const DarkModeToggle = ({ darkMode, setDarkMode }) => {
+const DarkModeToggle = () => {
+  const { darkMode, toggleDarkMode } = useTheme(); // Use context values
+
   return (
     <button
-      onClick={() => setDarkMode(!darkMode)}
+      onClick={toggleDarkMode}
       className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
       aria-label="Toggle dark mode"
     >
